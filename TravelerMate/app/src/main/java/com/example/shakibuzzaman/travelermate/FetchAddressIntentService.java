@@ -1,7 +1,6 @@
-package com.example.hasib.travelermate;
+package com.example.shakibuzzaman.travelermate;
 
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Intent;
 
 /**

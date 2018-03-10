@@ -1,4 +1,4 @@
-package com.example.hasib.travelermate;
+package com.example.shakibuzzaman.travelermate;
 
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -27,8 +27,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polyline;
-
 
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {

@@ -1,4 +1,4 @@
-package com.example.hasib.travelermate;
+package com.example.shakibuzzaman.travelermate;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

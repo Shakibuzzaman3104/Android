@@ -1,4 +1,4 @@
-package com.example.hasib.travelermate;
+package com.example.shakibuzzaman.travelermate;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

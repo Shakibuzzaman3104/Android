@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hasib.travelermate">
+    package="com.example.shakibuzzaman.travelermate">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <service
-            android:name=".FetchAddressIntentService"
+            android:name="com.example.shakibuzzaman.travelermate.FetchAddressIntentService"
             android:exported="false" />
 
         <!--
@@ -38,13 +38,13 @@
         //AIzaSyCs5uCMcFkPppZFKWGprJ62Q5ItVV-GTSs
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example.shakibuzzaman.travelermate.MapsActivity"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait"
             >
 
         </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.shakibuzzaman.travelermate.MainActivity"
             android:screenOrientation="portrait"
 
             >

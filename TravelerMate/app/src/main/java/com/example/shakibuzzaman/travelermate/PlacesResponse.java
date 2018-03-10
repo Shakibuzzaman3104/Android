@@ -1,4 +1,4 @@
-package com.example.hasib.travelermate;
+package com.example.shakibuzzaman.travelermate;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
