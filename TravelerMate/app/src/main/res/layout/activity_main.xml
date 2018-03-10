@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main2"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_14sdp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/seachbar"
+                >
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    />
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/seachbar"-->
+                    <!--android:textColor="#595959"-->
+                    <!--android:paddingLeft="@dimen/_4sdp"-->
+                    <!--android:id="@+id/input"-->
+                    <!--android:hint="Enter Location"-->
+                    <!--android:textColorHint="#787878"-->
+                    <!--android:inputType="textCapWords"-->
+                    <!---->
+
+                    <!--/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:background="#51a58379"
+                android:layout_marginTop="@dimen/_20sdp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:background="@drawable/button_bg_hospital"
+                            android:button="@android:color/transparent"
+                            android:id="@+id/hospital"
+                            android:onClick="Hospital"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Hospital"
+                            android:layout_marginTop="2dp"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:background="@drawable/button_bg_police"
+                            android:button="@android:color/transparent"
+                            android:id="@+id/police"
+                            android:onClick="Police"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Police Station"
+                            android:layout_marginTop="2dp"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:background="@drawable/button_bg_bank"
+                            android:button="@android:color/transparent"
+                            android:id="@+id/bank"
+                            android:onClick="Bank"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bank"
+                            android:layout_marginTop="2dp"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:background="@drawable/button_bg_atm"
+                            android:id="@+id/atm"
+                            android:button="@android:color/transparent"
+                            android:onClick="ATM"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ATM"
+                            android:layout_marginTop="2dp"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/button"
+                    android:text="Find"
+                    android:textColor="#636363"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/find"
+                    android:onClick="Find"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>
