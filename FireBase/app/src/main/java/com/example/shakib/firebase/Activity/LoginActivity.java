@@ -1,19 +1,19 @@
-package com.example.shakib.firebase.Model;
+package com.example.shakib.firebase.Activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.shakib.firebase.Helper;
+import com.example.shakib.firebase.Helpers.Helper;
 import com.example.shakib.firebase.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends Activity {
 
@@ -73,6 +73,8 @@ public class LoginActivity extends Activity {
                         if(task.isSuccessful())
                         {
                             Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            Intent intent=new Intent(LoginActivity.this,UserDetails.class);
+                            startActivity(intent);
                         }
 
                         else

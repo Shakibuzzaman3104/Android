@@ -1,4 +1,4 @@
-package com.example.shakib.firebase.Model;
+package com.example.shakib.firebase.Activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.shakib.firebase.Helper;
+import com.example.shakib.firebase.Helpers.Helper;
+import com.example.shakib.firebase.Model.Users;
 import com.example.shakib.firebase.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -25,11 +26,15 @@ public class MainActivity extends AppCompatActivity {
     Helper helper= new Helper();
     EditText firstname,lastname,email,age,bg,pass;
     private FirebaseUser user;
+    FirebaseDatabase database ;
+    DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        database = FirebaseDatabase.getInstance();
 
         mAuth = FirebaseAuth.getInstance();  //FireBase Initialization
 
@@ -45,6 +50,34 @@ public class MainActivity extends AppCompatActivity {
     public void onStart()
     {
         super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+       /* if(currentUser!=null)
+        {
+            final List<Users> userList = new ArrayList<>();
+            myRef.child(getUID()).addValueEventListener(new ValueEventListener() {
+                public static final String TAG ="Checker" ;
+
+                @Override
+                public void onDataChange(DataSnapshot snapshot) {
+                    userList.clear();
+                    for (DataSnapshot postSnapshot: snapshot.getChildren()) {
+                        Users user = postSnapshot.getValue(Users.class);
+                        userList.add(user);
+
+                        // here you can access to name property like university.name
+
+                    }
+
+                    Toast.makeText(MainActivity.this, ""+userList.size(), Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.w(TAG, "Failed to read value.",databaseError.toException());
+                }
+            });
+        }*/
     }
 
 
@@ -90,12 +123,15 @@ public class MainActivity extends AppCompatActivity {
         final String uid=getUID();
         DatabaseReference myRef = database.getReference("users");
 
-        myRef.child(uid).child("First_Name").setValue(FirstName);
+        Users user = new Users(Age,BG,Email,FirstName,LastName);
+
+        myRef.child(uid).setValue(user);
+        /*myRef.child(uid).child("First_Name").setValue(FirstName);
 
         myRef.child(uid).child("Last_Name").setValue(LastName);
         myRef.child(uid).child("Age").setValue(Age);
         myRef.child(uid).child("Email").setValue(Email);
-        myRef.child(uid).child("BG").setValue(BG);
+        myRef.child(uid).child("BG").setValue(BG);*/
 
     }
 
