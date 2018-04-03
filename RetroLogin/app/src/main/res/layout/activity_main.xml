@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shakibuzzaman.retrologin.Activity.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="60dp"
+             android:hint="Email Address"
+             android:id="@+id/ID"
+             />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:id="@+id/Pass"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:id="@+id/login"
+            android:text="Login"
+            android:onClick="login"
+             />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Register"
+            android:onClick="Registers"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Show"
+                android:id="@+id/sh"
+                android:onClick="Show"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="FireBase"
+
+                android:onClick="fire_Create"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="FireLogin"
+
+                android:onClick="fire_Login"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

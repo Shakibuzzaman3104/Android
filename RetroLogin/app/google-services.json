@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "57106269422",
+    "firebase_url": "https://retrologin-481cb.firebaseio.com",
+    "project_id": "retrologin-481cb",
+    "storage_bucket": "retrologin-481cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57106269422:android:5f7750b11eb28b06",
+        "android_client_info": {
+          "package_name": "com.example.shakibuzzaman.retrologin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57106269422-kj35t49knrtrhqecf3hadqv9tt9l7d6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shakibuzzaman.retrologin",
+            "certificate_hash": "abd408425e5a53a7fa67eaf2b658d90e62f55077"
+          }
+        },
+        {
+          "client_id": "57106269422-gmu5otd9uke79351evulmc4ectsj29oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDenXclJLnJAX3DSSImlOgEwfMB_MQDvoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57106269422-gmu5otd9uke79351evulmc4ectsj29oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
