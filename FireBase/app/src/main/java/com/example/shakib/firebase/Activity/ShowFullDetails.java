@@ -24,9 +24,9 @@ public class ShowFullDetails extends Activity {
         Intent intent = getIntent();
 
         String Name = intent.getStringExtra("Name");
-        Toast.makeText(this, ""+Name, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, ""+Name, Toast.LENGTH_SHORT).show();
         String AGE = intent.getStringExtra("Age");
-        Toast.makeText(this, ""+AGE, Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(this, ""+AGE, Toast.LENGTH_SHORT).show();
         String Blood = intent.getStringExtra("Blood_Group");
         String Mail = intent.getStringExtra("Email");
 

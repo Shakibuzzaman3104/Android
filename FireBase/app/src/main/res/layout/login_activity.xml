@@ -41,7 +41,7 @@
             android:layout_width="160dp"
             android:layout_height="60dp"
             android:onClick="logins"
-            android:hint="Login"
+            android:text="Login"
             />
 
     </LinearLayout>
