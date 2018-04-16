@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fn"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:hint="First Name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="19dp" />
+
+        <EditText
+            android:id="@+id/ln"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="18dp"
+            android:hint="Last Name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/ln"
+            android:layout_alignTop="@+id/bg"
+            android:hint="Age"
+            android:layout_alignLeft="@+id/ln" />
+
+        <EditText
+            android:id="@+id/bg"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/fn"
+            android:layout_centerVertical="true"
+            android:hint="Blood Group"
+            android:layout_alignLeft="@+id/fn" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/fn"
+            android:hint="Email"
+            android:minWidth="160dp"
+            android:layout_alignLeft="@+id/fn" />
+
+        <EditText
+            android:id="@+id/st_pass"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/ln"
+            android:hint="Password"
+            android:layout_alignLeft="@+id/ln" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="24dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:onClick="image"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:onClick="register"
+                android:text="Register" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:onClick="login"
+                android:text="Login" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
